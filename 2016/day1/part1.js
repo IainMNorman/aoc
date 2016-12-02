@@ -14,23 +14,15 @@ for (command of commands) {
 
 
     switch (turn) {
-        case "R":
-            if (direction == 3) {
-                direction = 0;
-            }
-            else {
-                direction += 1;
-            }
+        case "R":           
+                direction++;
             break;
         case "L":
-            if (direction == 0) {
-                direction = 3;
-            }
-            else {
-                direction -= 1;
-            }
+                direction--;
             break;
     }
+
+    direction = (direction + 4) % 4;
 
     switch (direction) {
         case 0:
@@ -47,7 +39,8 @@ for (command of commands) {
             break;
     }
 
-    console.log(`Turning 90 degrees ${turn}, going ${distance} blocks (${direction}), now at ${x},${y}`);
+    //console.log(`Turning 90 degrees ${turn}, going ${distance} blocks (${direction}), now at ${x},${y}`);
 }
 
 console.log(`Taxi cab distance is ${Math.abs(x) + Math.abs(y)}`);
+process.exit();

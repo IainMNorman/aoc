@@ -1,7 +1,6 @@
 var x = 0, y = 0;
 var direction = 0;
 
-
 var input = "R1, R3, L2, L5, L2, L1, R3, L4, R2, L2, L4, R2, L1, R1, L2, R3, L1, L4, R2, L5, R3, R4, L1, R2, L1, R3, L4, R5, L4, L5, R5, L3, R2, L3, L3, R1, R3, L4, R2, R5, L4, R1, L1, L1, R5, L2, R1, L2, R188, L5, L3, R5, R1, L2, L4, R3, R5, L3, R3, R45, L4, R4, R72, R2, R3, L1, R1, L1, L1, R192, L1, L1, L1, L4, R1, L2, L5, L3, R5, L3, R3, L4, L3, R1, R4, L2, R2, R3, L5, R3, L1, R1, R4, L2, L3, R1, R3, L4, L3, L4, L2, L2, R1, R3, L5, L1, R4, R2, L4, L1, R3, R3, R1, L5, L2, R4, R4, R2, R1, R5, R5, L4, L1, R5, R3, R4, R5, R3, L1, L2, L4, R1, R4, R5, L2, L3, R4, L4, R2, L2, L4, L2, R5, R1, R4, R3, R5, L4, L4, L5, L5, R3, R4, L1, L3, R2, L2, R1, L3, L5, R5, R5, R3, L4, L2, R4, R5, R1, R4, L3";
 
 //var input = "R8, R4, R4, R8";
@@ -17,24 +16,15 @@ for (command of commands) {
 
 
     switch (turn) {
-        case "R":
-            if (direction == 3) {
-                direction = 0;
-            }
-            else {
-                direction += 1;
-            }
+        case "R":           
+                direction++;
             break;
         case "L":
-            if (direction == 0) {
-                direction = 3;
-            }
-            else {
-                direction -= 1;
-            }
+                direction--;
             break;
     }
 
+    direction = (direction + 4) % 4;
 
     for (var i = 0; i < distance; i++) {
         switch (direction) {
