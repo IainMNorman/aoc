@@ -48,6 +48,20 @@
         },
         {
             "type": "node",
+            "request": "launch",
+            "name": "Day 4 Part 1",
+            "program": "${workspaceRoot}/2016/day4/part1.js",
+            "cwd": "${workspaceRoot}/2016/day4/"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Day 4 Part 2",
+            "program": "${workspaceRoot}/2016/day4/part2.js",
+            "cwd": "${workspaceRoot}/2016/day4/"
+        },
+        {
+            "type": "node",
             "request": "attach",
             "name": "Attach to Process",
             "port": 5858
