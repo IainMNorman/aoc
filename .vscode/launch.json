@@ -7,58 +7,16 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Day 1 Part 1",
-            "program": "${workspaceRoot}/2016/day1/part1.js",
-            "cwd": "${workspaceRoot}/2016/day1/"
+            "name": "Part 1",
+            "program": "${workspaceRoot}/2016/day6/part1.js",
+            "cwd": "${workspaceRoot}/2016/day6/"
         },
         {
             "type": "node",
             "request": "launch",
-            "name": "Day 1 Part 2",
-            "program": "${workspaceRoot}/2016/day1/part2.js",
-            "cwd": "${workspaceRoot}/2016/day1/"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Day 2 Part 1",
-            "program": "${workspaceRoot}/2016/day2/part1.js",
-            "cwd": "${workspaceRoot}/2016/day2/"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Day 2 Part 2",
-            "program": "${workspaceRoot}/2016/day2/part2.js",
-            "cwd": "${workspaceRoot}/2016/day2/"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Day 3 Part 1",
-            "program": "${workspaceRoot}/2016/day3/part1.js",
-            "cwd": "${workspaceRoot}/2016/day3/"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Day 3 Part 2",
-            "program": "${workspaceRoot}/2016/day3/part2.js",
-            "cwd": "${workspaceRoot}/2016/day3/"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Day 4 Part 1",
-            "program": "${workspaceRoot}/2016/day4/part1.js",
-            "cwd": "${workspaceRoot}/2016/day4/"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Day 4 Part 2",
-            "program": "${workspaceRoot}/2016/day4/part2.js",
-            "cwd": "${workspaceRoot}/2016/day4/"
+            "name": "Part 2",
+            "program": "${workspaceRoot}/2016/day6/part2.js",
+            "cwd": "${workspaceRoot}/2016/day6/"
         },
         {
             "type": "node",
