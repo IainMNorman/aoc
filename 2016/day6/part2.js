@@ -572,7 +572,7 @@ vejkuvii
 uhfrombz
 clgrjlys`;
 
-var table = input.split('\n').map(line => line.split(''));
+var table = input.split('\n').map(x => x.split(''));
 var part1 = '';
 var part2 = '';
 

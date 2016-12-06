@@ -29,12 +29,9 @@ lineReader.on('close', function () {
     var part2 = '';
     for (var i = 0; i < length; i++) {
         totals[i].sort(function (a, b) {
-            return b.count < a.count;
+            return b.count - a.count;
         });
-        part1 += totals[i].reverse()[0].letter;
-        totals[i].sort(function (a, b) {
-            return b.count > a.count;
-        });
+        part1 += totals[i][0].letter;
         part2 += totals[i].reverse()[0].letter;
     }
 
